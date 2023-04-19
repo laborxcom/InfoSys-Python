@@ -3,8 +3,9 @@
 
 nam = input("Введите Ваше имя: ")
 god = input(nam + ', какой сейчас год? ')
-let = input(nam + ", сколько Вам лет? ")
+god = int(god)
+let = int(input(nam + ", сколько Вам лет? "))
 ngod = god + let
-print(nam + ', в ' + ngod + ' Вам будет ' \
-               + 2*let + ' лет.')
+print(nam + ', в ' + str(ngod) + ' Вам будет ' \
+               + str(2*let) + ' лет.')
                
