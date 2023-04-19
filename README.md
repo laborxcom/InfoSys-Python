@@ -1,2 +1,1 @@
-# InfoSystem academy. Python course.
-Python course at InfoSystem Academy
+# InfoSystem Academy. Python course 001
