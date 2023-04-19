@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-nam = input("Введите Ваше имя: ")
-god = input(nam + ', какой сейчас год? ')
-god = int(god)
-let = int(input(nam + ", сколько Вам лет? "))
-ngod = god + let
-print(nam + ', в ' + str(ngod) + ' Вам будет ' \
-               + str(2*let) + ' лет.')
+YourName = input("Введите Ваше имя: ")
+CurYear = input(YourName + ', какой сейчас год? ')
+CurYear = int(CurYear)
+YearsOld = int(input(YourName + ", сколько Вам лет? "))
+FutueYears = CurYear + YearsOld
+print(YourName + ', в ' + str(FutueYears) + ' Вам будет ' \
+               + str(2*YearsOld) + ' лет.')
                
