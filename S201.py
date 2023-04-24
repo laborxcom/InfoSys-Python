@@ -15,9 +15,17 @@ locale.setlocale(locale.LC_ALL, 'ru_RU.UTF-8')
 # Это моё примечание
 t = dt.now()
 h = t.hour
+m = t.minute
+tt = t.time
+
+print(tt)
 
 nam = input('Введите Ваше имя: ')
-if h < 11:
+
+#if (h > 0 and h < 3) or ((h = 3) and (m < 59)) :
+#    print(f'Доброй ночи, {nam}!')
+#elif (h > 4 or ( h =3 and m >= 59)) and h < 11:
+if h< 11:
     print(f'Доброе утро, {nam}!')
 elif h >= 16:
     print(f'Добрый вечер, {nam}!')
