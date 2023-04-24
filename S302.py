@@ -13,3 +13,6 @@ print(f'\nb = >>>{b}<<<')
 print(f'\nc = >>>{c}<<<')
 t = a + b[::-1] + c
 print(t)
+
+
+print((v := input(':> '))[:v.lower().find('н') + 1] + v[v.lower().find('н') + 1:v.lower().rfind('н')][::-1] + v[v.lower().rfind('н'):])
