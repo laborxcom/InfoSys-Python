@@ -9,10 +9,9 @@ b = int(input('Введите второе число: '))
 print(a, b)
 
 if a < b:
-    for i in range(a, b+1):
-        print(i)
+    for i in range(a, b + 1):
+        print(i, end=' ')
 else:
     pass
 
-
-print('END')
+print('\nEND')
