@@ -21,9 +21,18 @@ for letter in filter(lambda b: b.lower() in wow, t):
 
 print(d)
 # Д/З: Дописать программу до конца
-print('\n' + 30*'*' + '\n')
-ld1 = sorted(d.items())
-for b, n in ld1:
+print('\n' + 30 * '*' + '\n')
+for b, n in sorted(d.items()):
     print(f"'{b}' --> {n:3}")
+    
+print('\n' + 30 * '*' + '\n')
+for b, n in sorted(d.items(), key=lambda y: y[1], reverse=True):
+    print(f"'{b}' --> {n}")
+
+dn = [(n, b) for b, n in d.items()]
+print('\n' + 30*'*' + '\n')
+for n, b in sorted(dn, reverse=True):
+    print(f"'{b}' --> {n:3}")
+
 
 print('\nEND')
