@@ -21,27 +21,9 @@ for letter in filter(lambda b: b.lower() in wow, t):
 
 print(d)
 # Д/З: Дописать программу до конца
-
-#=======================================================
-
-print("Гласные буквы по алфавиту:")
-for key in sorted(d.keys()):
-    print(f"{key}: {d[key]}")
-
-print("Гласные буквы по частоте появления:")
-for item in sorted(d.items(), key=lambda x: x[1], reverse=True):
-    print(f"{item[0]}---> {item[1]}")
-
-
-#=======================================================
-
-
-for b, n in sorted(d.items()):
-    print(f"'{b}' --> {n:3}")
-print(30 * '*')
-
-for b, n in sorted(d.items(), key=lambda x: x[1], reverse=True):
+print('\n' + 30*'*' + '\n')
+ld1 = sorted(d.items())
+for b, n in ld1:
     print(f"'{b}' --> {n:3}")
 
-#=======================================================
 print('\nEND')
