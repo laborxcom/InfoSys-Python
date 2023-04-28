@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import sys
-print(sys.executable)
+import spman as sp
 
-print('END', ser     =   '')
+x = sp.input_simple()
+print(x)
+
+print('END')
