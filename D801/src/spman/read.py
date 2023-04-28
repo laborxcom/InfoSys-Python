@@ -7,14 +7,23 @@ __all__ = [
     'input_all',
 ]
 
+class EndOfInput(Exception):
+    pass
+
 TOCHNOST = Decimal('0.001')
 
 def input_simple():
-    res = input('Res: ')
+    res = input('Res: ').strip()
+    if not res:
+        raise EndOfInput('End of user input')
     res = Decimal(res).quantize(TOCHNOST)
     fam = input('Fam: ')
     return res, fam
 
 def input_all():
-    while True:
-        yield input_simple()
+    try:
+        while True:
+            yield input_simple()
+    except EndOfInput:
+        pass
+    
