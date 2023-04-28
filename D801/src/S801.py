@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import spman as sp
 
-x = sp.input_simple()
-print(x)
+for x in sp.input_all():
+    print(x)
 
 print('END')
